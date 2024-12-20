@@ -54,7 +54,7 @@ jobs:
           tags: asyncapi/github-action-for-cli:${{ steps.docker_version.outputs.action_version }}
           outputs: type=docker,dest=/tmp/asyncapi.tar
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: asyncapi
           path: /tmp/asyncapi.tar
@@ -66,10 +66,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -98,10 +98,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -119,10 +119,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -153,10 +153,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -186,10 +186,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -216,10 +216,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -248,10 +248,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -282,10 +282,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -316,10 +316,10 @@ jobs:
     needs: [should-workflow-run, build-docker]
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
