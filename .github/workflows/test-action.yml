@@ -68,8 +68,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -102,8 +102,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -125,8 +125,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -161,8 +161,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -196,8 +196,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -228,8 +228,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -262,8 +262,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -298,8 +298,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
@@ -334,8 +334,8 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: asyncapi
           path: /tmp
+          pattern: asyncapi-*
       - name: Load Docker image
         run: |
           docker load --input /tmp/asyncapi.tar
